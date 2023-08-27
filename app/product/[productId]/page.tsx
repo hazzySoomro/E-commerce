@@ -1,12 +1,20 @@
+import Container from '@/app/components/Container';
+import ProductDetails from './productDetail';
+import { product } from '@/utils/product';
+
 interface IPrams {
-    productId?: String;
+  productId?: String;
 }
-
-
 
 const contactus = ({ params }: { params: IPrams }) => {
-    console.log(params)
-    return <div>helloaa</div>
+  console.log(params);
 
-}
+  return (
+    <div className="p-8">
+      <Container>
+        <ProductDetails product={product} />
+      </Container>
+    </div>
+  );
+};
 export default contactus;
