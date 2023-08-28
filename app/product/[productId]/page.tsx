@@ -1,14 +1,12 @@
-import Container from '@/app/components/Container';
-import ProductDetails from './productDetail';
-import { product } from '@/utils/product';
+import Container from "@/app/components/Container";
+import ProductDetails from "./productDetail";
+import { product } from "@/utils/product";
 
 interface IPrams {
   productId?: String;
 }
 
 const contactus = ({ params }: { params: IPrams }) => {
-  console.log(params);
-
   return (
     <div className="p-8">
       <Container>
